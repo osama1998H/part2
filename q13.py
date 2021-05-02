@@ -10,4 +10,6 @@ string_maps = {
     "9": "z"
 }
 
+for i in string_maps:
+    print(i)
 
