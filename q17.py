@@ -1,24 +1,3 @@
-# n = 4
-
-# # print(int("00"))
-
-# temp = "1"
-# c = temp + (str(0)*n)
-
-# numbers = [x for x in range(int(c))]
-# # print(c)
-
-# strobo_grammatic = []
-
-# for i in numbers:
-#     if i == 0:
-#         pass
-#     else:
-#         if i % 2 != 0 and i % 3 !=0:
-#             strobo_grammatic.append(i)
-
-# print(strobo_grammatic)
-# # print(3 % 2)
 
 def gen_strobogrammatic(n):
     """
@@ -29,10 +8,11 @@ def gen_strobogrammatic(n):
     return result
 
 
-def xb(a, v):
-    dekta = xb(12, 13)
-    return dekta
-
+def xdata(a, v):
+    if a > v:
+        return a
+    xdata(a + 1, v - 1)
+    
 
 
 def helper(n, length):
@@ -52,8 +32,8 @@ def helper(n, length):
     return result
 
 
-print("n = 2: \n", gen_strobogrammatic(2))
-print("n = 3: \n", gen_strobogrammatic(3))
-print("n = 110: \n", gen_strobogrammatic(4))
+# print("n = 2: \n", gen_strobogrammatic(2))
+# print("n = 3: \n", gen_strobogrammatic(3))
+# print("n = 110: \n", gen_strobogrammatic(4))
 
-print(xb(12, 15))
+print(xdata(15, 20))
