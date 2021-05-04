@@ -1,0 +1,7 @@
+ask have not get a solution yet
+ part 2
+ 
+ q21.py
+ q22.py
+ q23.py
+ q24.py
