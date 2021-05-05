@@ -5,3 +5,4 @@ ask have not get a solution yet
  q22.py
  q23.py
  q24.py
+ q26.py
