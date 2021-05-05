@@ -1,12 +1,17 @@
+
 word = input("Enter The Name: ")
 
 
 def new_func(word):
     new_word = word[::-1]
-    if new_word == word:
-        return(True)
+    result = int(word) + int(new_word)
+    invered_result = str(result)[::-1]
+    
+    if str(result) == invered_result:
+        return(True, result, invered_result)
     else:
-        return(False)
+        return(False, result, invered_result)
+    
 
 
 print(new_func(word))
