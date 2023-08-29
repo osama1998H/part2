@@ -4,8 +4,7 @@ def gen_strobogrammatic(n):
     :type n: int
     :rtype: List[str]
     """
-    result = helper(n, n)
-    return result
+    return helper(n, n)
 
 
 def xdata(a, v):
@@ -24,11 +23,8 @@ def helper(n, length):
     result = []
     for middle in middles:
         if n != length:
-            result.append("0" + middle + "0")
-        result.append("8" + middle + "8")
-        result.append("1" + middle + "1")
-        result.append("9" + middle + "6")
-        result.append("6" + middle + "9")
+            result.append(f"0{middle}0")
+        result.extend((f"8{middle}8", f"1{middle}1", f"9{middle}6", f"6{middle}9"))
     return result
 
 

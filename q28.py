@@ -18,16 +18,13 @@ def Series_info(series: list) -> dict:
     """
     third_term = series[2]
     third_last_term = series[-3]
-    sum_of_the_series = 0
-    for i in series:
-        sum_of_the_series += i
-    info = {
+    sum_of_the_series = sum(series)
+    return {
         "Third Term": third_term,
         "Third Last Term": third_last_term,
         "Sum Of The Series": sum_of_the_series,
-        "Series": series
+        "Series": series,
     }
-    return info
 
 
 info = Series_info(series)

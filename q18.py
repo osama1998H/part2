@@ -7,10 +7,7 @@ def odd_check(number: int) -> bool:
     Returns:
         bool: [Return True If The Number Is Odd And False If The Number Is Even]
     """
-    if number % 2 == 0:
-        return False
-    else:
-        return True
+    return number % 2 != 0
 
 
 x = [1, 3, 8, 6, 7, 4, 9, 10, 14]
@@ -31,11 +28,10 @@ def calc_median(y: list) -> int:
     if odd_check(len(y)):
         n = (len(y)-1)/2
         m = y[int(n)]
-        print(f"median of {y} is: {m}")
     else:
-        n = int(len(y)/2)
+        n = len(y) // 2
         m = (y[n-1] + y[n]) / 2
-        print(f"median of {y} is: {m}")
+    print(f"median of {y} is: {m}")
     return m
 
 

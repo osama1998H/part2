@@ -3,10 +3,5 @@ prime = [
 
 
 n = int(input("input n: "))
-count = 0
-
-for i in prime:
-    if i <= n:
-        count += i
-
+count = sum(i for i in prime if i <= n)
 print(count)

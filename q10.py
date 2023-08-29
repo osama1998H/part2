@@ -19,7 +19,7 @@ os_profile = [
 
 for key in os_profile:
     if hasattr(platform, key):
-        print(key + ": " + str(getattr(platform, key)()))
+        print(f"{key}: {str(getattr(platform, key)())}")
 # import os
 # if hasattr(os, "path"):
 #     print(str(getattr(os, "path")))

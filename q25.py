@@ -12,15 +12,9 @@ def check_miss_numbers(number_string: str) -> list:
     Returns:
         list: [The Mising Numbers In Phone Numbers]
     """
-    miss_numbers = []
     orginals_numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     numbers = [int(i) for i in number_string]
-    for check in orginals_numbers:
-        if check in numbers:
-            pass
-        else:
-            miss_numbers.append(check)
-    return miss_numbers
+    return [check for check in orginals_numbers if check not in numbers]
 
 
 def main():
