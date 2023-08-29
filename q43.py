@@ -9,13 +9,8 @@ rs = [[x3, y3], [x4, y4]]
 
 
 def slope(point: list):
-    up = point[1][1] - point[0][1]
     down = point[1][0] - point[0][0]
-    if down == 0:
-        return "inf"
-    else:
-        mid = up / down
-        return mid
+    return "inf" if down == 0 else (point[1][1] - point[0][1]) / down
 
 
 if round(slope(pq)) == round(slope(rs)):

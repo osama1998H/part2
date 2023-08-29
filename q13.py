@@ -16,8 +16,7 @@ def letter_combinations(digits):
     for num in digits:
         temp = []
         for an in result:
-            for char in string_maps[num]:
-                temp.append(an + char)
+            temp.extend(an + char for char in string_maps[num])
         result = temp
     return result
 

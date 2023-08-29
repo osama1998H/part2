@@ -59,6 +59,6 @@ word_list = c.split()
 
 word_freq = [word_list.count(n) for n in word_list]
 
-print("Pairs (Words and Frequencies:\n {}".format(str(list(zip(word_list, word_freq)))))
+print(f"Pairs (Words and Frequencies:\n {list(zip(word_list, word_freq))}")
 
 print(max(word_freq))

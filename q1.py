@@ -11,10 +11,7 @@
 
 
 def test_distinct(data):
-    if len(data) == len(set(data)):
-        return True
-    else:
-        return False
+    return len(data) == len(set(data))
 
 
 print(test_distinct([1, 5, 7, 9]))

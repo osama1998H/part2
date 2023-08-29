@@ -16,7 +16,6 @@ def sum_array(*args: list, target: int):
         If Not Equls Return Messges
     """
     count = 0
-    result_sum = 0
     results = []
     for list in args:
         for item in list:
@@ -24,9 +23,7 @@ def sum_array(*args: list, target: int):
         results.append(count)
         count = 0
 
-    for result in results:
-        result_sum += result
-
+    result_sum = sum(results)
     if result_sum == target:
         for res in args:
             print(res)
@@ -35,8 +32,8 @@ def sum_array(*args: list, target: int):
         print("The Arrays And Target Not Equles")
 
 
-x = [x for x in range(10, 16)]
-y = [x for x in range(10, 16)]
-z = [x for x in range(10, 16)]
+x = list(range(10, 16))
+y = list(range(10, 16))
+z = list(range(10, 16))
 
 sum_array(x, y, z, target=(75 * 3))

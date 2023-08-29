@@ -1,10 +1,7 @@
 import time
 
 def my_fuc(n):
-    data = []
-    for i in range(int(n)):
-        data.append(i**0.5)
-    return data
+    return [i**0.5 for i in range(int(n))]
 
 
 start = time.time()
